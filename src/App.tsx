@@ -42,6 +42,10 @@ function App() {
     }
   }
 
+  const handleRemoveCountry = (countryCode: string) => {
+    handleCountrySelect(countryCode, false)
+  }
+
   const handleSelectAllInContinent = (continentName: string, isSelected: boolean) => {
     // Find the continent in countriesData
     const continent = countriesData.find(c => c.name === continentName)
@@ -91,7 +95,16 @@ function App() {
         {isCountriesListVisible && (
           <ul>
             {selectedCountries.map(code => (
-              <li key={code}>{getCountryNameFromCode(code)}</li>
+              <li key={code} className="selected-country-tag">
+                {getCountryNameFromCode(code)}
+                <button
+                  className="remove-country-btn"
+                  onClick={() => handleRemoveCountry(code)}
+                  aria-label={`Remove ${getCountryNameFromCode(code)}`}
+                >
+                  ×
+                </button>
+              </li>
             ))}
           </ul>
         )}

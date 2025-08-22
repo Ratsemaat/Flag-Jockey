@@ -1,0 +1,14 @@
+<svg width="220" height="220" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">FJ Logo</title>
+  
+  <!-- Background (optional) -->
+  <rect x="8" y="8" width="184" height="184" rx="24" fill="#0F172A"></rect>
+  
+  <!-- F -->
+  <path d="M60 60 V140 M60 60 H110 M60 100 H95" fill="none" stroke="#38BDF8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"></path>
+  
+  <!-- J (same height as F, with bottom curve) -->
+  <path d="M140 60 V125 
+           Q140 140 125 140 
+           H105" fill="none" stroke="#38BDF8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
